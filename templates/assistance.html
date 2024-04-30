@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/logincss.css') }}">
+</head>
+<body>
+    <div class="profile-form-container">
+        <h2>Assistance</h2>
+        <div class="user-info">
+            <h1>{{ assistance }}</h1>
+        </div>
+        <div class="input-group">
+            <button onclick="window.location.href='{{ url_for('login') }}'">Back to Home Page</button>
+        </div>
+    </div>
+
+   
+</body>
+</html>

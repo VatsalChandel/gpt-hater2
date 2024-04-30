@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/logincss.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="profile-form-container">
+        <h2>Ask Your Question Here 😄</h2> 
+        <form action='/submit-login' method="post">
+            <div class="input-group">
+                <label for="name">Type here</label>
+                <input type="text" id="name" name="user">
+            <div class="input-group">
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
